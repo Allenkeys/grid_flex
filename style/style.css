@@ -116,6 +116,11 @@ button:active{
     main div{
         height: 800px;
         padding: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: centerad;
     }
     .sedans{
         border-radius: 10px 10px 0 0;
@@ -123,5 +128,6 @@ button:active{
     .luxury{
         border-radius: 0 0 10px 10px;
     }
+
 }
 
