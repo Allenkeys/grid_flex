@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;701&family=Lexend+Deca:wght@400;401&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root{
+    --background-orange: hsl(31, 77%, 52%);
+    --background-cyan: hsl(184, 100%, 22%);
+    --background-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-para: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --header-font-weight: 701;
+    --para-font-weight: 401;
+    --header-font-family: 'Big Shoulders Display', cursive;
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    /* margin:22vh auto; */
+    /* border-radius: 10px; */
+    width: 60vw;
+    height: 60vh;
+    /* background-color: var(--background-dark-cyan); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div{
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    /* border-radius:10px ; */
+}
+.sedans{
+    background-color: var(--background-orange);
+    border-radius: 10px 0 0 10px;
+    color: var(--background-orange);
+}
+.suvs{
+    background-color: var(--background-cyan);
+}
+.luxury{
+    background-color: var(--background-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+img{
+    margin-bottom: 30px;
+}
+h1{
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    color: var(--very-light-gray);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+p{
+    font-weight: var(--para-font-weight);
+    color: var(--transparent-para);
+    margin-top: 40px;
+    /* line-height: 2rem; */
+}
+
+.sedans button{
+    color: var(--background-orange);
+}
+.suvs button{
+    color: var(--background-cyan);
+}
+.luxury button{
+    color: var(--background-dark-cyan)
+}
+
+button{
+    height: 3rem;
+    width: 10rem;
+    margin-top: 3rem;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 30px
+}
+button:active{
+    background: none;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+@media screen and (min-width: 1440px){
+    p{
+        line-height: 2rem;
+    }
+    button{
+        margin-top: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    body{
+        height: 1800px;
+    }
+    main{
+        flex-direction: column;
+    }
+    main div{
+        height: 800px;
+        padding: 2.5rem;
+    }
+    .sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
