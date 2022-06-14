@@ -25,6 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 main{
     /* margin:22vh auto; */
@@ -96,6 +97,26 @@ button:active{
     border: 2px solid var(--very-light-gray);
 }
 
+a{
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    height: 3rem;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 4rem;
+    background-color: orange;
+    padding: .5rem;
+    border-radius: 30px;
+}
+a:active{
+    background: none;
+    color: orange;
+    border: 2px solid orange;
+} 
+
 @media screen and (min-width: 1440px){
     p{
         line-height: 2rem;
@@ -108,7 +129,7 @@ button:active{
 
 @media screen and (max-width: 480px){
     body{
-        height: 1800px;
+        height: 1600px;
     }
     main{
         flex-direction: column;
